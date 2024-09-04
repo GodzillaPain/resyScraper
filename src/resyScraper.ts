@@ -56,7 +56,7 @@ async function openResy() {
         let reservationButtons = await driver.findElements(By.css('div.ReservationButtonList .ReservationButton'));
 
         if (reservationButtons.length === 0) {
-            console.log('No reservation buttons found.');
+            console.log('No reservation buttons found for location and date combination.');
         }
 
         let reservations = [];
